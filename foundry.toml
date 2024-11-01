@@ -1,0 +1,56 @@
+[profile.default]
+src = 'src'
+out = 'out'
+libs = ['lib']
+
+[profile.zksync]
+src = 'src'
+libs = ['lib']
+fallback_oz = true
+is_system = false
+mode = "3"
+
+[rpc_endpoints]
+sepolia = "${SEPOLIA_RPC_URL}"
+mainnet = "${ETH_MAINNET_RPC_URL}"
+polygon = "${POLYGON_MAINNET_RPC_URL}"
+bsc = "${BSC_MAINNET_RPC_URL}"
+avax = "${AVAX_MAINNET_RPC_URL}"
+kava = "${KAVA_MAINNET_RPC_URL}"
+kava-testnet = "${KAVA_TESTNET_RPC_URL}"
+velas = "${VELAS_MAINNET_RPC_URL}"
+heco= "${HECO_MAINNET_RPC_URL}"
+fantom = "${FANTOM_MAINNET_RPC_URL}"
+cronos= "${CRONOS_MAINNET_RPC_URL}"
+etc = "${ETC_MAINNET_RPC_URL}"
+pulseChain = "${PULSECHAIN_RPC_URL}"
+arb = "${ARB_MAINNET_RPC_URL}"
+base = "${BASE_MAINNET_RPC_URL}"
+zkSync= "${ZKSYNC_MAINNET_RPC_URL}"
+mantle = "${MANTLE_RPC_URL}"
+blast = "${BLAST_RPC_URL}"
+xlayer = "${XLAYER_RPC_URL}"
+etherlink = "${ETHERLINK_RPC_URL}"
+dione = "${DIONE_RPC_URL}"
+flare = "${FLARE_RPC_URL}"
+taiko = "${TAIKO_RPC_URL}"
+
+[etherscan]
+sepolia = { key = "${ETHERSCAN_API_KEY}", url = "https://api-sepolia.etherscan.io/api" }
+mainnet = { key = "${ETHERSCAN_API_KEY}" }
+polygon = { key = "${POLYGON_ETHERSCAN_API_KEY}", url = "https://api.polygonscan.com/api" }
+bsc = { key = "${BSC_ETHERSCAN_API_KEY}", url = "https://api.bscscan.com/api" }
+avax = { key = "${AVAX_ETHERSCAN_API_KEY}", url = "https://api.snowscan.xyz/api" }
+kava = { key = "${KAVA_ETHERSCAN_API_KEY}", url = "" }
+velas = { key = "${VELAS_ETHERSCAN_API_KEY}", url = "" }
+heco = { key = "${HECO_ETHERSCAN_API_KEY}", url = "" }
+fantom = { key = "${FANTOM_ETHERSCAN_API_KEY}", url = "https://api.ftmscan.com/api" }
+cronos = { key = "${CRONOS_ETHERSCAN_API_KEY}", url = "https://api.cronoscan.com/api" }
+etc = { key = "${ETC_ETHERSCAN_API_KEY}", url = "" }
+pulseChain = { key = "${PULSECHAIN_ETHERSCAN_API_KEY}", url = "" }
+arb = { key = "${ARB_ETHERSCAN_API_KEY}", url = "https://api.arbiscan.io/api" }
+base = { key = "${BASE_ETHERSCAN_API_KEY}", url = "https://api.basescan.org/api" }
+zkSync = { key = "${ZKSYNC_ETHERSCAN_API_KEY}", url = "https://api-era.zksync.network/api" }
+blast = { key = "${BLAST_ETHERSCAN_API_KEY}", url = "https://api.blastscan.io/api" }
+
+# See more config options https://github.com/gakonst/foundry/tree/master/config
