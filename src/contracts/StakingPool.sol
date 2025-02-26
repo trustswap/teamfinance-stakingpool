@@ -70,6 +70,7 @@ contract StakingPool is OwnableUpgradeable {
         uint256 precision,
         uint256 totalReward
     );
+    event PoolCreatedID(uint256 poolId);
     event PoolStopped(uint256 poolId);
     event WithdrawTokensEmptyPool(uint256 poolId);
     event RewardAdded(uint256 poolId, uint256 rewardAmount, address rewardToken);
@@ -152,6 +153,7 @@ contract StakingPool is OwnableUpgradeable {
             })
         );
         poolVersion[poolInfo.length - 1] = currentVersion;
+        emit PoolCreatedID(poolInfo.length - 1);
         emit PoolCreated(stakingToken, rewardToken, startTime, endTime, 10 ** precision, depositedRewardAmount);
     }
 
